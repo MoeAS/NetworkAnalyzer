@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Network Analyzer</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_phone_status">Network Analyzer</string>
+    <string name="title_activity_phone">Cellphone Data</string>
+	<string name="tvPhoneStatus">Phone Status</string>
+	
+	<string name="tvServiceState">Service State : </string>
+	<string name="tvConnState">Connection State : </string>
+	<string name="tvSignalLevel">Signal Level : </string>
+</resources>

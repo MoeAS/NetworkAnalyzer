@@ -1,0 +1,42 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbarAlwaysDrawVerticalTrack="false">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView android:text="@string/tvServiceState" style="@style/labelStyleRight"/>
+            <TextView android:id="@+id/serviceState_info" style="@style/textStyle"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView android:text="@string/tvConnState" style="@style/labelStyleRight"/>
+            <TextView android:id="@+id/connectionState_info" style="@style/textStyle"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView android:text="@string/tvSignalLevel" style="@style/labelStyleRight"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+                <ProgressBar android:id="@+id/signalLevel" style="@style/progressStyle"/>
+                <TextView android:id="@+id/signalLevelInfo" style="@style/textSmallStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:id="@+id/device_info" style="@style/labelStyleLeft"/>
+    </LinearLayout>
+</ScrollView>
